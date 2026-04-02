@@ -179,21 +179,46 @@ button {
 .theme-toggle:focus-visible {
   outline: none;
   box-shadow: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
+    padding: 1.4rem 1.2rem 1.6rem;
   }
 
   .flame-stage {
-    min-height: 40vh;
+    min-height: 24vh;
     justify-content: flex-end;
   }
 
   .flame-trigger {
     right: 0.2rem;
+  }
+
+  .identity {
+    gap: 1.35rem;
+    font-size: 0.86rem;
+    line-height: 1.38;
+  }
+
+  .timeline-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.9rem;
+  }
+
+  .project-row {
+    grid-template-columns: 7ch auto;
+  }
+
+  .footer {
+    padding: 0 1.2rem 1.4rem;
+  }
+
+  .theme-toggle {
+    font-size: 0.86rem;
+    line-height: 1.38;
   }
 }
 
