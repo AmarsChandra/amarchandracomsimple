@@ -183,6 +183,12 @@ button {
 }
 
 @media (max-width: 900px) {
+  /* Avoid 1fr main row — it pushes the footer to the bottom of the viewport */
+  .page-shell {
+    grid-template-rows: auto auto;
+    align-content: start;
+  }
+
   .layout {
     grid-template-columns: 1fr;
     padding: 1.85rem 1.35rem 2.1rem;
