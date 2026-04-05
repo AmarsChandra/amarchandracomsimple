@@ -185,12 +185,14 @@ button {
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
-    padding: 1.4rem 1.2rem 1.6rem;
+    padding: 1.85rem 1.35rem 2.1rem;
+    gap: clamp(1.25rem, 4vw, 1.75rem);
   }
 
   .flame-stage {
-    min-height: 24vh;
+    min-height: 28vh;
     justify-content: flex-end;
+    margin-top: 0.35rem;
   }
 
   .flame-trigger {
@@ -198,14 +200,18 @@ button {
   }
 
   .identity {
-    gap: 1.35rem;
+    gap: 1.75rem;
     font-size: 0.86rem;
-    line-height: 1.38;
+    line-height: 1.48;
+  }
+
+  .block {
+    gap: 0.35rem;
   }
 
   .timeline-row {
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .project-row {
@@ -213,12 +219,12 @@ button {
   }
 
   .footer {
-    padding: 0 1.2rem 1.4rem;
+    padding: 0 1.35rem max(1.85rem, calc(0.75rem + env(safe-area-inset-bottom, 0px)));
   }
 
   .theme-toggle {
     font-size: 0.86rem;
-    line-height: 1.38;
+    line-height: 1.48;
   }
 }
 
